@@ -1,0 +1,16 @@
+version: '3'
+
+volumes:
+  aoc2021-vol:
+
+services:
+  aoc2021:
+    container_name: aoc2021
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile.dev
+    volumes:
+      - aoc2021-vol:/workspace
+    command: >
+      /bin/sh -c "cd /workspace &&
+                  while sleep 1000; do :; done"
