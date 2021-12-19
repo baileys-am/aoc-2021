@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
+            "name": ".NET Core File (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${fileDirname}/bin/Debug/net6.0/${relativeFileDirname}.dll",
+            "args": [],
+            "cwd": "${fileDirname}",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        }
+    ]
+}
